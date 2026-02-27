@@ -1,0 +1,276 @@
+{
+  "aircraft_metadata": {
+    "manufacturer": "Saab",
+    "type": "Multi-role Fighter",
+    "family": "JAS 39 Gripen",
+    "fcs_update_rate_hz": 400,
+    "visual_update_rate_hz": 60,
+    "coordinate_system": "NED",
+    "units": "SI"
+  },
+  "variants": [
+    {
+      "variant_id": "JAS-39C_Standard",
+      "designation": "JAS 39C Gripen",
+      "description": "Third generation single-seat multi-role fighter",
+      "first_flight": "2002",
+      "physical_properties": {
+        "empty_weight_kg": 6800,
+        "max_takeoff_weight_kg": 14000,
+        "max_landing_weight_kg": 11000,
+        "fuel_capacity_internal_kg": 2268,
+        "fuel_capacity_external_kg": 1700,
+        "length_m": 14.1,
+        "wingspan_m": 8.4,
+        "height_m": 4.5,
+        "wing_area_m2": 30.0,
+        "canard_area_m2": 2.2,
+        "max_g_positive": 9.0,
+        "max_g_negative": -3.0
+      },
+      "propulsion": {
+        "engine_model": "Volvo RM12",
+        "engine_type": "Turbofan with afterburner",
+        "max_thrust_dry_kn": 54.0,
+        "max_thrust_afterburner_kn": 80.5,
+        "tsfc_dry": 0.082,
+        "tsfc_afterburner": 0.195,
+        "turbine_inlet_temp_max_k": 1650,
+        "spool_up_time_s": 4.0,
+        "spool_down_time_s": 3.0,
+        "idle_thrust_kn": 4.5,
+        "idle_fuel_flow_kg_s": 0.15
+      },
+      "performance": {
+        "max_speed_sea_level_mach": 1.2,
+        "max_speed_altitude_mach": 2.0,
+        "service_ceiling_m": 15240,
+        "combat_ceiling_m": 14000,
+        "rate_of_climb_m_s": 254,
+        "takeoff_distance_m": 400,
+        "landing_distance_m": 500,
+        "combat_radius_km": 800,
+        "ferry_range_km": 3200
+      },
+      "aerodynamics": {
+        "cd0_base": 0.022,
+        "cd0_gear_down": 0.045,
+        "induced_drag_factor_k": 0.17,
+        "cl_max_clean": 1.4,
+        "cl_max_landing": 1.8,
+        "cl_alpha_per_rad": 5.5,
+        "cl_delta_elevon_per_rad": 0.4,
+        "cl_delta_canard_per_rad": 0.6,
+        "cm0": -0.02,
+        "cm_alpha_per_rad": -0.8,
+        "cm_q": -15.0,
+        "canard_vortex_lift_factor": 1.3,
+        "aoa_stall_clean_deg": 28.0,
+        "aoa_stall_landing_deg": 22.0,
+        "aoa_landing_ref_deg": 12.0
+      },
+      "flight_control": {
+        "fcs_type": "Digital Fly-By-Wire",
+        "redundancy_level": "Triplex",
+        "control_law_combat": "G-command",
+        "control_law_landing": "Alpha-command",
+        "pid_pitch_kp": 2.5,
+        "pid_pitch_ki": 0.5,
+        "pid_pitch_kd": 0.8,
+        "pid_pitch_kq": 12.0,
+        "pid_roll_kp": 3.0,
+        "pid_roll_ki": 0.3,
+        "pid_roll_kd": 0.6,
+        "pid_yaw_kp": 1.5,
+        "pid_yaw_ki": 0.2,
+        "pid_yaw_kd": 0.4,
+        "max_elevon_deflection_deg": 30.0,
+        "max_canard_deflection_deg": 45.0,
+        "max_rudder_deflection_deg": 30.0,
+        "control_surface_rate_deg_s": 80.0
+      },
+      "avionics": {
+        "radar_type": "Pulse-Doppler",
+        "radar_model": "PS-05/A",
+        "radar_gain_db": 34.0,
+        "radar_peak_power_kw": 10.0,
+        "radar_frequency_ghz": 10.0,
+        "radar_range_max_km": 120,
+        "radar_range_min_km": 0.5,
+        "radar_tracking_capacity": 10,
+        "radar_engagement_capacity": 4,
+        "irst_present": false,
+        "ews_model": "Basic EW Suite",
+        "ew_jamming_power_w": 1500,
+        "ew_rwr_bands": ["C", "X", "Ku"],
+        "sensor_fusion_enabled": false,
+        "datalink": "Link-16",
+        "hud_type": "Wide-Angle HUD",
+        "displays": ["MFD-Left", "MFD-Center", "MFD-Right"]
+      },
+      "weapons": {
+        "internal_gun": "Mauser BK-27",
+        "gun_caliber_mm": 27,
+        "gun_rounds": 120,
+        "hardpoints": 8,
+        "max_external_load_kg": 5300,
+        "supported_missiles_aa": [
+          "AIM-9 Sidewinder",
+          "IRIS-T",
+          "AIM-120 AMRAAM"
+        ],
+        "supported_missiles_ag": [
+          "AGM-65 Maverick",
+          "RBS-15"
+        ],
+        "supported_bombs": [
+          "GBU-12",
+          "GBU-49",
+          "Mk-82"
+        ]
+      }
+    },
+    {
+      "variant_id": "JAS-39E_MLU",
+      "designation": "JAS 39E Gripen",
+      "description": "Advanced fourth generation single-seat multi-role fighter (Gripen NG)",
+      "first_flight": "2016",
+      "physical_properties": {
+        "empty_weight_kg": 8000,
+        "max_takeoff_weight_kg": 16500,
+        "max_landing_weight_kg": 12000,
+        "fuel_capacity_internal_kg": 3400,
+        "fuel_capacity_external_kg": 2500,
+        "length_m": 15.2,
+        "wingspan_m": 8.6,
+        "height_m": 4.5,
+        "wing_area_m2": 30.0,
+        "canard_area_m2": 2.5,
+        "max_g_positive": 9.0,
+        "max_g_negative": -3.0
+      },
+      "propulsion": {
+        "engine_model": "GE F414-GE-39E",
+        "engine_type": "Turbofan with afterburner",
+        "max_thrust_dry_kn": 57.8,
+        "max_thrust_afterburner_kn": 98.0,
+        "tsfc_dry": 0.078,
+        "tsfc_afterburner": 0.185,
+        "turbine_inlet_temp_max_k": 1850,
+        "spool_up_time_s": 3.5,
+        "spool_down_time_s": 2.5,
+        "idle_thrust_kn": 5.0,
+        "idle_fuel_flow_kg_s": 0.18
+      },
+      "performance": {
+        "max_speed_sea_level_mach": 1.25,
+        "max_speed_altitude_mach": 2.0,
+        "service_ceiling_m": 16000,
+        "combat_ceiling_m": 15000,
+        "rate_of_climb_m_s": 275,
+        "takeoff_distance_m": 400,
+        "landing_distance_m": 500,
+        "combat_radius_km": 1300,
+        "ferry_range_km": 4000
+      },
+      "aerodynamics": {
+        "cd0_base": 0.021,
+        "cd0_gear_down": 0.044,
+        "induced_drag_factor_k": 0.16,
+        "cl_max_clean": 1.6,
+        "cl_max_landing": 2.0,
+        "cl_alpha_per_rad": 5.8,
+        "cl_delta_elevon_per_rad": 0.45,
+        "cl_delta_canard_per_rad": 0.65,
+        "cm0": -0.015,
+        "cm_alpha_per_rad": -0.75,
+        "cm_q": -16.0,
+        "canard_vortex_lift_factor": 1.4,
+        "aoa_stall_clean_deg": 30.0,
+        "aoa_stall_landing_deg": 24.0,
+        "aoa_landing_ref_deg": 14.0
+      },
+      "flight_control": {
+        "fcs_type": "Digital Fly-By-Wire",
+        "redundancy_level": "Quadruplex",
+        "control_law_combat": "G-command",
+        "control_law_landing": "Alpha-command",
+        "pid_pitch_kp": 2.8,
+        "pid_pitch_ki": 0.6,
+        "pid_pitch_kd": 0.9,
+        "pid_pitch_kq": 14.0,
+        "pid_roll_kp": 3.3,
+        "pid_roll_ki": 0.35,
+        "pid_roll_kd": 0.7,
+        "pid_yaw_kp": 1.7,
+        "pid_yaw_ki": 0.25,
+        "pid_yaw_kd": 0.5,
+        "max_elevon_deflection_deg": 30.0,
+        "max_canard_deflection_deg": 45.0,
+        "max_rudder_deflection_deg": 30.0,
+        "control_surface_rate_deg_s": 90.0
+      },
+      "avionics": {
+        "radar_type": "AESA",
+        "radar_model": "Raven ES-05",
+        "radar_gain_db": 42.0,
+        "radar_peak_power_kw": 15.0,
+        "radar_frequency_ghz": 10.0,
+        "radar_range_max_km": 200,
+        "radar_range_min_km": 0.3,
+        "radar_tracking_capacity": 20,
+        "radar_engagement_capacity": 6,
+        "irst_present": true,
+        "irst_model": "Skyward-G",
+        "irst_range_km": 50,
+        "ews_model": "MFS Electronic Warfare Suite",
+        "ew_jamming_power_w": 5000,
+        "ew_rwr_bands": ["C", "X", "Ku", "Ka"],
+        "ew_drfm_capable": true,
+        "sensor_fusion_enabled": true,
+        "datalink": "Link-16",
+        "hud_type": "Wide-Angle HUD",
+        "displays": ["LAD-Large-Area-Display"]
+      },
+      "weapons": {
+        "internal_gun": "Mauser BK-27",
+        "gun_caliber_mm": 27,
+        "gun_rounds": 120,
+        "hardpoints": 10,
+        "max_external_load_kg": 7000,
+        "supported_missiles_aa": [
+          "IRIS-T",
+          "AIM-120 AMRAAM",
+          "Meteor"
+        ],
+        "supported_missiles_ag": [
+          "AGM-65 Maverick",
+          "RBS-15F",
+          "KEPD 350"
+        ],
+        "supported_bombs": [
+          "GBU-12",
+          "GBU-39",
+          "GBU-49",
+          "Mk-82",
+          "Mk-84"
+        ]
+      }
+    }
+  ],
+  "atmospherics": {
+    "model": "ISA-Standard",
+    "sea_level_temperature_k": 288.15,
+    "sea_level_pressure_pa": 101325,
+    "temperature_lapse_rate_k_per_m": 0.0065,
+    "gravity_m_s2": 9.80665,
+    "air_gas_constant_j_kg_k": 287.05,
+    "tropopause_altitude_m": 11000
+  },
+  "constants": {
+    "speed_of_light_m_s": 299792458,
+    "speed_of_sound_sea_level_m_s": 340.3,
+    "air_molar_mass_kg_mol": 0.0289644,
+    "universal_gas_constant_j_mol_k": 8.31447
+  }
+}
